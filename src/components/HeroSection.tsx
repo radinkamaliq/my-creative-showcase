@@ -3,7 +3,7 @@ import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center px-5 pt-20 overflow-hidden">
       {/* Background grid effect */}
       <div className="absolute inset-0 opacity-5"
         style={{
@@ -21,10 +21,10 @@ const HeroSection = () => {
           <p className="text-primary uppercase tracking-[0.3em] text-sm mb-4 font-medium">
             Hi, I'm Radinka Maliq
           </p>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-text leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 gradient-text leading-tight">
             Student
           </h1>
-          <p className="text-muted-foreground text-lg md:text-xl max-w-xl mx-auto mb-10 leading-relaxed">
+          <p className="text-muted-foreground text-base md:text-xl max-w-xl mx-auto mb-10 leading-relaxed px-2">
             I build simple things that work great.
           </p>
         </motion.div>
@@ -33,12 +33,12 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="flex items-center justify-center gap-5"
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5"
         >
-          <a href="#projects" className="inline-flex items-center gap-2 px-8 py-3 rounded-lg bg-primary text-primary-foreground font-semibold transition-all hover:shadow-[0_0_25px_hsl(var(--glow-cyan)/0.4)]">
+          <a href="#projects" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-semibold transition-all hover:shadow-[0_0_25px_hsl(var(--glow-cyan)/0.4)] w-full sm:w-auto justify-center text-base min-h-[48px]">
             View Projects
           </a>
-          <a href="#contact" className="inline-flex items-center gap-2 px-8 py-3 rounded-lg border border-primary/30 text-primary font-semibold transition-all hover:bg-primary/10">
+          <a href="#contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg border border-primary/30 text-primary font-semibold transition-all hover:bg-primary/10 w-full sm:w-auto justify-center text-base min-h-[48px]">
             Contact Me
           </a>
         </motion.div>
@@ -54,7 +54,7 @@ const HeroSection = () => {
             { icon: Linkedin, href: "#" },
             { icon: Mail, href: "#" },
           ].map(({ icon: Icon, href }, i) => (
-            <a key={i} href={href} className="text-muted-foreground hover:text-primary transition-colors">
+            <a key={i} href={href} className="text-muted-foreground hover:text-primary transition-colors p-2 min-h-[44px] min-w-[44px] flex items-center justify-center">
               <Icon size={22} />
             </a>
           ))}

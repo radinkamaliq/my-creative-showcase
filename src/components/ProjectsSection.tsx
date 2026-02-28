@@ -30,7 +30,7 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="py-24 px-6">
+    <section id="projects" className="py-16 md:py-24 px-5">
       <div className="max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -40,10 +40,10 @@ const ProjectsSection = () => {
           className="text-center mb-16"
         >
           <p className="text-primary uppercase tracking-[0.2em] text-sm mb-3">Portfolio</p>
-          <h2 className="text-3xl md:text-4xl font-bold gradient-text">My Projects</h2>
+          <h2 className="text-2xl md:text-4xl font-bold gradient-text">My Projects</h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {projects.map((project, i) => (
             <motion.div
               key={project.title}
@@ -63,7 +63,7 @@ const ProjectsSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
               </div>
 
-              <div className="p-6">
+              <div className="p-5 md:p-6">
                 <h3 className="text-foreground font-semibold text-xl mb-2 group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
@@ -80,12 +80,12 @@ const ProjectsSection = () => {
                   ))}
                 </div>
 
-                <div className="flex gap-4">
-                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors inline-flex items-center gap-1 text-sm">
-                    <Github size={16} /> Code
+                <div className="flex gap-6">
+                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors inline-flex items-center gap-2 text-sm py-2 min-h-[44px]">
+                    <Github size={18} /> Code
                   </a>
-                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors inline-flex items-center gap-1 text-sm">
-                    <ExternalLink size={16} /> Live Demo
+                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors inline-flex items-center gap-2 text-sm py-2 min-h-[44px]">
+                    <ExternalLink size={18} /> Live Demo
                   </a>
                 </div>
               </div>

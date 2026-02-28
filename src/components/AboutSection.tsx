@@ -9,7 +9,7 @@ const highlights = [
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-24 px-6">
+    <section id="about" className="py-16 md:py-24 px-5">
       <div className="max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -19,7 +19,7 @@ const AboutSection = () => {
           className="text-center mb-16"
         >
           <p className="text-primary uppercase tracking-[0.2em] text-sm mb-3">About Me</p>
-          <h2 className="text-3xl md:text-4xl font-bold gradient-text">Who I Am</h2>
+          <h2 className="text-2xl md:text-4xl font-bold gradient-text">Who I Am</h2>
         </motion.div>
 
         <motion.div
@@ -27,9 +27,9 @@ const AboutSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="surface-card glow-border glow-border-hover p-8 md:p-10 mb-12 transition-all duration-500"
+          className="surface-card glow-border glow-border-hover p-6 md:p-10 mb-12 transition-all duration-500"
         >
-          <p className="text-foreground/80 text-lg leading-relaxed">
+          <p className="text-foreground/80 text-base md:text-lg leading-relaxed">
             I'm Radinka Maliq, a student passionate about building simple things that work great. 
             I love exploring modern web technologies and turning ideas into clean, 
             functional applications. Every project is an opportunity to learn something new 
@@ -37,7 +37,7 @@ const AboutSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
           {highlights.map(({ icon: Icon, title, desc }, i) => (
             <motion.div
               key={title}

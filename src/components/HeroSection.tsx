@@ -19,14 +19,13 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
         >
           <p className="text-primary uppercase tracking-[0.3em] text-sm mb-4 font-medium">
-            Welcome to my portfolio
+            Hi, I'm Radinka Maliq
           </p>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-text leading-tight">
-            Creative Developer
+            Student
           </h1>
           <p className="text-muted-foreground text-lg md:text-xl max-w-xl mx-auto mb-10 leading-relaxed">
-            I craft digital experiences that blend beautiful design with clean, 
-            performant code. Let's build something extraordinary.
+            I build simple things that work great.
           </p>
         </motion.div>
 

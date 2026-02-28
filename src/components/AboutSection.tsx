@@ -30,10 +30,10 @@ const AboutSection = () => {
           className="surface-card glow-border glow-border-hover p-8 md:p-10 mb-12 transition-all duration-500"
         >
           <p className="text-foreground/80 text-lg leading-relaxed">
-            I'm a passionate developer who loves turning ideas into reality through code. 
-            With a strong foundation in modern web technologies, I create applications 
-            that are not only functional but also visually stunning. I believe that great 
-            software should be both powerful and beautiful.
+            I'm Radinka Maliq, a student passionate about building simple things that work great. 
+            I love exploring modern web technologies and turning ideas into clean, 
+            functional applications. Every project is an opportunity to learn something new 
+            and create something meaningful.
           </p>
         </motion.div>
 

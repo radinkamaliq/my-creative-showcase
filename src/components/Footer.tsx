@@ -26,7 +26,7 @@ const Footer = () => {
           ))}
         </div>
         <p className="text-muted-foreground/50 text-sm mt-8">
-          © 2026 Portfolio. All rights reserved.
+          © 2026 Radinka Maliq. All rights reserved.
         </p>
       </div>
     </footer>
